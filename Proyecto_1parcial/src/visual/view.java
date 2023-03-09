@@ -37,11 +37,16 @@ public class view extends javax.swing.JFrame {
         Filosofo3 = new javax.swing.JLabel();
         Filosofo4 = new javax.swing.JLabel();
         Filosofo5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        fork1 = new javax.swing.JLabel();
+        fork3 = new javax.swing.JLabel();
+        fork2 = new javax.swing.JLabel();
+        fork5 = new javax.swing.JLabel();
+        fork4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         floor1 = new javax.swing.JLabel();
         floor2 = new javax.swing.JLabel();
@@ -113,31 +118,46 @@ public class view extends javax.swing.JFrame {
         jPanel1.add(Filosofo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 30, -1));
 
         Filosofo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/f2.png"))); // NOI18N
-        jPanel1.add(Filosofo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
+        jPanel1.add(Filosofo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, -1, -1));
 
         Filosofo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/f3.png"))); // NOI18N
-        jPanel1.add(Filosofo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, -1, -1));
+        jPanel1.add(Filosofo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
 
         Filosofo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/f4.png"))); // NOI18N
-        jPanel1.add(Filosofo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
+        jPanel1.add(Filosofo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
 
         Filosofo5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/f5.png"))); // NOI18N
         jPanel1.add(Filosofo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+        fork1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
+        jPanel1.add(fork1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork3.png"))); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, -1, -1));
+        fork3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork3.png"))); // NOI18N
+        jPanel1.add(fork3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 50, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
+        fork2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
+        jPanel1.add(fork2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
+        fork5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork2.png"))); // NOI18N
+        jPanel1.add(fork5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork3.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, -1));
+        fork4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fork3.png"))); // NOI18N
+        jPanel1.add(fork4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 90, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/table.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 100, -1));
@@ -430,6 +450,14 @@ public class view extends javax.swing.JFrame {
         Filosofos[3] = Filosofo4;
         Filosofos[4] = Filosofo5;
        
+        JLabel fork [];
+        fork = new JLabel[5];
+        fork[0] =   fork1;
+        fork[1] =   fork2;
+        fork[2] =   fork3;
+        fork[3] =   fork4;
+        fork[4] =   fork5;
+        
           
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -533,14 +561,19 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JLabel floor7;
     private javax.swing.JLabel floor8;
     private javax.swing.JLabel floor9;
+    private javax.swing.JLabel fork1;
+    private javax.swing.JLabel fork2;
+    private javax.swing.JLabel fork3;
+    private javax.swing.JLabel fork4;
+    private javax.swing.JLabel fork5;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
