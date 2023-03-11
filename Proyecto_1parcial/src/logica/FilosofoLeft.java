@@ -35,8 +35,9 @@ public class FilosofoLeft extends Thread  {
 
     public void run() {
         for (int i = 1; i <= 4; i++) {
-          
-
+          if ( i == 3){
+            i = 1;
+          }
            forkLeft.decrease();
           this.estaso("left fork OK");
             //ten.setVisible(true);
@@ -109,8 +110,8 @@ public class FilosofoLeft extends Thread  {
          String aux2 = show2.getText();
           
         show3.setText(x);
-        show2.setText(aux2);
-        show1.setText(aux1);
+        show2.setText(aux1);
+        show1.setText(aux2);
         
      }
      
