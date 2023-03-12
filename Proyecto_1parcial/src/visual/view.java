@@ -151,6 +151,11 @@ public class view extends javax.swing.JFrame {
         S13 = new javax.swing.JLabel();
         S14 = new javax.swing.JLabel();
         S15 = new javax.swing.JLabel();
+        conf1 = new javax.swing.JLabel();
+        conf2 = new javax.swing.JLabel();
+        conf3 = new javax.swing.JLabel();
+        conf4 = new javax.swing.JLabel();
+        conf5 = new javax.swing.JLabel();
         S10 = new javax.swing.JLabel();
         S11 = new javax.swing.JLabel();
         S12 = new javax.swing.JLabel();
@@ -200,7 +205,6 @@ public class view extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -558,16 +562,41 @@ public class view extends javax.swing.JFrame {
         S15.setToolTipText("");
         jPanel2.add(S15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 100, 50));
 
+        conf1.setForeground(new java.awt.Color(0, 0, 0));
+        conf1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf1.png"))); // NOI18N
+        conf1.setText("0");
+        jPanel2.add(conf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 110, 30));
+
+        conf2.setForeground(new java.awt.Color(0, 0, 0));
+        conf2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf2.png"))); // NOI18N
+        conf2.setText("0");
+        jPanel2.add(conf2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 100, 30));
+
+        conf3.setForeground(new java.awt.Color(0, 0, 0));
+        conf3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        conf3.setText("0");
+        jPanel2.add(conf3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 100, 30));
+
+        conf4.setForeground(new java.awt.Color(0, 0, 0));
+        conf4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        conf4.setText("0");
+        jPanel2.add(conf4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, 30));
+
+        conf5.setForeground(new java.awt.Color(0, 0, 0));
+        conf5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf5.png"))); // NOI18N
+        conf5.setText("0");
+        jPanel2.add(conf5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 300, 100, 30));
+
         S10.setBackground(new java.awt.Color(0, 0, 0));
         S10.setForeground(new java.awt.Color(0, 0, 0));
-        S10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        S10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
         S10.setText(".");
         S10.setToolTipText("");
         jPanel2.add(S10, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 80, 110, 50));
 
         S11.setBackground(new java.awt.Color(0, 0, 0));
         S11.setForeground(new java.awt.Color(0, 0, 0));
-        S11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        S11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
         S11.setText(".");
         S11.setToolTipText("");
         jPanel2.add(S11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 110, 50));
@@ -575,28 +604,28 @@ public class view extends javax.swing.JFrame {
         S12.setBackground(new java.awt.Color(0, 0, 0));
         S12.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         S12.setForeground(new java.awt.Color(0, 0, 0));
-        S12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        S12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
         S12.setText(".");
         S12.setToolTipText("");
         jPanel2.add(S12, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 110, 50));
 
         S7.setBackground(new java.awt.Color(0, 0, 0));
         S7.setForeground(new java.awt.Color(0, 0, 0));
-        S7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        S7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
         S7.setText(".");
         S7.setToolTipText("");
         jPanel2.add(S7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 110, 50));
 
         S8.setBackground(new java.awt.Color(0, 0, 0));
         S8.setForeground(new java.awt.Color(0, 0, 0));
-        S8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        S8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
         S8.setText(".");
         S8.setToolTipText("");
         jPanel2.add(S8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 110, 50));
 
         S9.setBackground(new java.awt.Color(0, 0, 0));
         S9.setForeground(new java.awt.Color(0, 0, 0));
-        S9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        S9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
         S9.setText(".");
         S9.setToolTipText("");
         jPanel2.add(S9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 110, 50));
@@ -647,12 +676,12 @@ public class view extends javax.swing.JFrame {
         jPanel2.add(ConF2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 110, -1));
 
         ConF3.setForeground(new java.awt.Color(0, 0, 0));
-        ConF3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        ConF3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
         ConF3.setText("Filosofo 3");
         jPanel2.add(ConF3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 110, -1));
 
         ConF4.setForeground(new java.awt.Color(0, 0, 0));
-        ConF4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        ConF4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
         ConF4.setText("Filosofo 4");
         jPanel2.add(ConF4, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 20, 110, -1));
 
@@ -738,7 +767,7 @@ public class view extends javax.swing.JFrame {
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btn1.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btn2.png"))); // NOI18N
         jButton1.setText("Inicio");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -762,21 +791,14 @@ public class view extends javax.swing.JFrame {
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/wall6.png"))); // NOI18N
         jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btn1.png"))); // NOI18N
         jButton2.setText("Terminar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 100, -1, -1));
-
-        jButton3.setText("Pausa");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, -1, -1));
+        jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -854,11 +876,18 @@ public class view extends javax.swing.JFrame {
        Fork fork4 = new Fork();
        Fork fork5 = new Fork();
        
-        FilosofoLeft fil1 = new FilosofoLeft  (fork2, fork1, 1, pensar1, eat1, ten1,S16,S17,S18);
-        FilosofoLeft fil5 = new FilosofoLeft  (fork1, fork5, 5,  pensar5, eat5, ten5,S4,S5,S6);
-        FilosofoLeft fil3 = new FilosofoLeft  (fork4, fork3, 3, pensar3, eat3, ten3,S7,S8,S9);
-        FilosofoRigth fil4 = new FilosofoRigth  (fork4, fork4, 4, pensar4, eat4, ten4,S10,S11,S12);
-        FilosofoRigth fil2 = new FilosofoRigth  (fork3, fork2, 2,  pensar2, eat2, ten2,S13,S14,S15);
+        FilosofoLeft fil1 = new FilosofoLeft  (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18);
+        
+        // FilosofoLeft fil2 = new FilosofoLeft  (fork3, fork2, 1, pensar2, eat2, ten2,S13,S14,S15);
+      FilosofoRigth fil2 = new FilosofoRigth  (fork3, fork2, 2,  pensar2, eat2, conf2,S13,S14,S15);
+      
+      FilosofoLeft fil3 = new FilosofoLeft  (fork4, fork3, 3, pensar3, eat3, conf3,S7,S8,S9);
+      
+         //FilosofoLeft fil4 = new FilosofoLeft  (fork4, fork5, 1, pensar4, eat4, ten4,S10,S11,S12);
+       FilosofoRigth fil4 = new FilosofoRigth  (fork4, fork5, 4, pensar4, eat4, conf4,S10,S11,S12);
+       
+        FilosofoLeft fil5 = new FilosofoLeft  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6);
+  
       
         
         fil1.start();
@@ -877,12 +906,6 @@ public class view extends javax.swing.JFrame {
       
        
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-
-     
-    }//GEN-LAST:event_jButton3ActionPerformed
 
   
     
@@ -957,6 +980,11 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JLabel S7;
     private javax.swing.JLabel S8;
     private javax.swing.JLabel S9;
+    private javax.swing.JLabel conf1;
+    private javax.swing.JLabel conf2;
+    private javax.swing.JLabel conf3;
+    private javax.swing.JLabel conf4;
+    private javax.swing.JLabel conf5;
     private javax.swing.JLabel eat1;
     private javax.swing.JLabel eat2;
     private javax.swing.JLabel eat3;
@@ -1045,7 +1073,6 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JLabel floor9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

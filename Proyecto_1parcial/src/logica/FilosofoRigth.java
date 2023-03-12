@@ -18,15 +18,15 @@ public class FilosofoRigth  extends Thread{
     private int number;
     private Fork forkLeft;
     private Fork forkRight;
-    private JLabel pensar, eat,ten,show1,show2,show3;
+    private JLabel pensar, eat,con,show1,show2,show3;
     
-    public FilosofoRigth(Fork izq, Fork der, int num, JLabel pensar, JLabel eat, JLabel ten, JLabel S1, JLabel S2, JLabel S3) {
+    public FilosofoRigth(Fork izq, Fork der, int num, JLabel pensar, JLabel eat, JLabel con, JLabel S1, JLabel S2, JLabel S3) {
         forkLeft = izq;
         forkRight = der;
         this.number = num;
         this.pensar = pensar;
         this.eat = eat;
-        this.ten = ten;
+        this.con = con;
         this.show1 = S1;
         this.show2 = S2;
         this.show3 = S3;
@@ -35,8 +35,7 @@ public class FilosofoRigth  extends Thread{
     }
 
     public void run() {
-        for (int i = 1; i <= 3; i++) {
-            
+        for (int i = 1; i <= 3; i++) {   
                  if ( i == 3){
             i = 1;
           }
@@ -52,6 +51,7 @@ public class FilosofoRigth  extends Thread{
 
             
               this.estaso("eating");
+            contador ();
             eat.setVisible(true);
              try {
                 Thread.sleep(2000);
@@ -106,6 +106,20 @@ public class FilosofoRigth  extends Thread{
         show2.setText(aux1);
         show1.setText(aux2);
         
+     }
+     
+     
+     public void contador () {
+ 
+      String aux;
+      int  contar = 0;
+    
+     contar = Integer.parseInt(con.getText());
+     contar = contar +1;
+       aux =Integer.toString(contar);
+      
+      con.setText(aux);
+      
      }
      
 }
