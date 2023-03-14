@@ -6,8 +6,8 @@ package visual;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import logica.FilosofoLeft;
-import logica.FilosofoRigth;
+
+import logica.Filosofo;
 
 import logica.Fork;
 
@@ -205,6 +205,18 @@ public class view extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        eatf1 = new javax.swing.JLabel();
+        eatf2 = new javax.swing.JLabel();
+        eatf3 = new javax.swing.JLabel();
+        eatf4 = new javax.swing.JLabel();
+        eatf5 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -800,6 +812,41 @@ public class view extends javax.swing.JFrame {
         });
         jPanel3.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, -1, -1));
 
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf1.png"))); // NOI18N
+        jPanel4.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, -1, -1));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf2.png"))); // NOI18N
+        jPanel4.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 60, -1, -1));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf4.png"))); // NOI18N
+        jPanel4.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, -1, -1));
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf3.png"))); // NOI18N
+        jPanel4.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/lf5.png"))); // NOI18N
+        jPanel4.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+
+        eatf1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel4.add(eatf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
+
+        eatf2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel4.add(eatf2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 70, -1, -1));
+
+        eatf3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel4.add(eatf3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, -1, -1));
+
+        eatf4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel4.add(eatf4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
+
+        eatf5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cena.png"))); // NOI18N
+        jPanel4.add(eatf5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/table2.1.png"))); // NOI18N
+        jPanel4.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 10, 250, 170));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -808,18 +855,24 @@ public class view extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(107, 107, 107)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 656, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(49, 49, 49))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(55, 55, 55)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 762, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -842,20 +895,23 @@ public class view extends javax.swing.JFrame {
         eat3.setVisible(false);
         eat4.setVisible(false);
         eat5.setVisible(false);
+        
+        eatf1.setVisible(false);
+        eatf2.setVisible(false);
+        eatf3.setVisible(false);
+        eatf4.setVisible(false);
+        eatf5.setVisible(false);
                 
        /* ten1.setVisible(false);
           ten2.setVisible(false);
             ten3.setVisible(false);
               ten4.setVisible(false);
                 ten5.setVisible(false);*/
+       
+       eatf1.setVisible(false);
     }
     
-    public int  end(int end) {
-        int terminar;
-        terminar = end;
-        
-        return terminar;
-    }
+    
       
     private boolean pausa = false; 
     
@@ -875,19 +931,20 @@ public class view extends javax.swing.JFrame {
        Fork fork3 = new Fork();
        Fork fork4 = new Fork();
        Fork fork5 = new Fork();
+     
+       Filosofo fil1 = new Filosofo (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18,eatf1);
+       Filosofo fil2 = new Filosofo  (fork2, fork3, 2,  pensar2, eat2, conf2,S13,S14,S15,eatf2);
+       Filosofo fil3 = new Filosofo  (fork3, fork4, 3, pensar3, eat3, conf3,S7,S8,S9,eatf3);
+       Filosofo fil4 = new Filosofo  (fork5, fork4, 4, pensar4, eat4, conf4,S10,S11,S12,eatf4);
+       Filosofo fil5 = new Filosofo  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6,eatf5);
        
-        FilosofoLeft fil1 = new FilosofoLeft  (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18);
-        
-        // FilosofoLeft fil2 = new FilosofoLeft  (fork3, fork2, 1, pensar2, eat2, ten2,S13,S14,S15);
-      FilosofoRigth fil2 = new FilosofoRigth  (fork3, fork2, 2,  pensar2, eat2, conf2,S13,S14,S15);
-      
+         
+    /*FilosofoLeft fil1 = new FilosofoLeft  (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18);       
+      FilosofoLeft fil2 = new FilosofoLeft  (fork3, fork2, 1, pensar2, eat2, ten2,S13,S14,S15);
       FilosofoLeft fil3 = new FilosofoLeft  (fork4, fork3, 3, pensar3, eat3, conf3,S7,S8,S9);
-      
-         //FilosofoLeft fil4 = new FilosofoLeft  (fork4, fork5, 1, pensar4, eat4, ten4,S10,S11,S12);
-       FilosofoRigth fil4 = new FilosofoRigth  (fork4, fork5, 4, pensar4, eat4, conf4,S10,S11,S12);
-       
-        FilosofoLeft fil5 = new FilosofoLeft  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6);
-  
+      FilosofoLeft fil4 = new FilosofoLeft  (fork4, fork5, 1, pensar4, eat4, ten4,S10,S11,S12); 
+      FilosofoLeft fil5 = new FilosofoLeft  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6);*/
+           
       
         
         fil1.start();
@@ -990,6 +1047,11 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JLabel eat3;
     private javax.swing.JLabel eat4;
     private javax.swing.JLabel eat5;
+    private javax.swing.JLabel eatf1;
+    private javax.swing.JLabel eatf2;
+    private javax.swing.JLabel eatf3;
+    private javax.swing.JLabel eatf4;
+    private javax.swing.JLabel eatf5;
     private javax.swing.JLabel floor1;
     private javax.swing.JLabel floor10;
     private javax.swing.JLabel floor11;
@@ -1100,6 +1162,12 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1109,6 +1177,7 @@ public class view extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel pensar1;
     private javax.swing.JLabel pensar2;
     private javax.swing.JLabel pensar3;
