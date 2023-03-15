@@ -16,15 +16,15 @@ public class Fork {
         valor = 1;
     }
 
-    synchronized void decrease() {
+  /*  synchronized void decrease() {
         while (valor <= 0) {
             try {
                 wait();
-            } catch (InterruptedException e) {
+            } catch (InterruptedException ex) {
             }
         }
         valor--;
-    }
+    }*/
 
     synchronized void increase() {
         valor++;

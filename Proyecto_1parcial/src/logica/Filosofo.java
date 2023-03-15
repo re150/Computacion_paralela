@@ -87,7 +87,7 @@ public class Filosofo  extends Thread{
     {
         
           forkRight.increase();
-         this.estaso("eating");
+         this.estado("eating");
             contador ();
             eat.setVisible(true);
             eat2.setVisible(true);
@@ -107,7 +107,7 @@ public class Filosofo  extends Thread{
         
              forkRight.increase();
              pensar.setVisible(true);
-             this.estaso("thinking");
+             this.estado("thinking");
              try {
                 Thread.sleep(3000);
             } catch (InterruptedException ex) {
@@ -118,7 +118,7 @@ public class Filosofo  extends Thread{
     
     }
     
-     public void estaso (String x) 
+     public void estado (String x) 
      {
          String aux1 = show3.getText();
          String aux2 = show2.getText();
@@ -136,9 +136,9 @@ public class Filosofo  extends Thread{
       String aux;
       int  contar = 0;
     
-     contar = Integer.parseInt(con.getText());
-     contar = contar +1;
-       aux =Integer.toString(contar);
+      contar = Integer.parseInt(con.getText());
+      contar = contar +1;
+      aux =Integer.toString(contar);
       
       con.setText(aux);
       
