@@ -21,6 +21,7 @@ public class Filosofo  extends Thread{
     private Fork forkLeft;
     private Fork forkRight;
     private JLabel pensar, eat,con,show1,show2,show3,eat2;
+    public  boolean estado = true;
     
     public Filosofo(Fork izq, Fork der, int num, JLabel pensar, JLabel eat, JLabel con, JLabel S1, JLabel S2, JLabel S3,JLabel eatf) {
         forkLeft = izq;
@@ -40,36 +41,10 @@ public class Filosofo  extends Thread{
     public void run() 
     {
     
-      boolean estado = true;
-      /*  for (int i = 1; i <= 3; i++) {   
-                 if ( i == 3){
-            i = 1;
-          }
-              this.estaso("rigth fork OK");
-        //    ten.setVisible(true);
-             try {
-                Thread.sleep(2000);
-            } catch (InterruptedException ex) {
-             ex.printStackTrace();
-            }
-          //   ten.setVisible(false);
-                this.estaso("rigth fork OK");
-             try {
-                Thread.sleep(2000);
-            } catch (InterruptedException ex) {
-             ex.printStackTrace();
-            }
-            
-         
-                 this.estaso("left fork OK");
-             try {
-                Thread.sleep(2000);
-            } catch (InterruptedException ex) {
-             ex.printStackTrace();
-        }
-        }*/
+     
+     
       
-      while(estado = true) 
+      while(estado) 
       {
       
        synchronized(forkLeft){  
@@ -92,7 +67,7 @@ public class Filosofo  extends Thread{
             eat.setVisible(true);
             eat2.setVisible(true);
             try {
-                Thread.sleep(3000);
+                Thread.sleep(3000); //(int)(Math.random() * 1000)
             } catch (InterruptedException ex) {
              ex.printStackTrace();
             }
@@ -109,7 +84,7 @@ public class Filosofo  extends Thread{
              pensar.setVisible(true);
              this.estado("thinking");
              try {
-                Thread.sleep(3000);
+                Thread.sleep(3000); //(int)(Math.random() * 1000)
             } catch (InterruptedException ex) {
              ex.printStackTrace();
             }

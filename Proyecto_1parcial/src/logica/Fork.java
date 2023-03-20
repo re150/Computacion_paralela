@@ -16,17 +16,7 @@ public class Fork {
         valor = 1;
     }
 
-  /*  synchronized void decrease() {
-        while (valor <= 0) {
-            try {
-                wait();
-            } catch (InterruptedException ex) {
-            }
-        }
-        valor--;
-    }*/
-
-    synchronized void increase() {
+     synchronized void increase() {
         valor++;
         notify();
     }

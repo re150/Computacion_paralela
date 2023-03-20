@@ -19,9 +19,12 @@ import logica.Fork;
  */
 public class view extends javax.swing.JFrame {
 
-    /**
-     * Creates new form view
-     */
+    Filosofo fil1;
+    Filosofo fil2;
+    Filosofo fil3;
+    Filosofo fil4;
+    Filosofo fil5;
+       
     public view() {
         initComponents();
         ghost ();   
@@ -804,7 +807,7 @@ public class view extends javax.swing.JFrame {
         jPanel3.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/btn1.png"))); // NOI18N
-        jButton2.setText("Terminar");
+        jButton2.setText("Pausar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -854,9 +857,9 @@ public class view extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(49, 49, 49))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(55, 55, 55)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -874,10 +877,12 @@ public class view extends javax.swing.JFrame {
                         .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(164, 164, 164))))
+                        .addGap(164, 164, 164))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))))
         );
 
         pack();
@@ -932,11 +937,11 @@ public class view extends javax.swing.JFrame {
        Fork fork4 = new Fork();
        Fork fork5 = new Fork();
      
-       Filosofo fil1 = new Filosofo (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18,eatf1);
-       Filosofo fil2 = new Filosofo  (fork2, fork3, 2,  pensar2, eat2, conf2,S13,S14,S15,eatf2);
-       Filosofo fil3 = new Filosofo  (fork3, fork4, 3, pensar3, eat3, conf3,S7,S8,S9,eatf3);
-       Filosofo fil4 = new Filosofo  (fork5, fork4, 4, pensar4, eat4, conf4,S10,S11,S12,eatf4);
-       Filosofo fil5 = new Filosofo  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6,eatf5);
+       fil1 = new Filosofo (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18,eatf1);
+       fil2 = new Filosofo  (fork2, fork3, 2,  pensar2, eat2, conf2,S13,S14,S15,eatf2);
+        fil3 = new Filosofo  (fork3, fork4, 3, pensar3, eat3, conf3,S7,S8,S9,eatf3);
+        fil4 = new Filosofo  (fork5, fork4, 4, pensar4, eat4, conf4,S10,S11,S12,eatf4);
+        fil5 = new Filosofo  (fork1, fork5, 5,  pensar5, eat5, conf5,S4,S5,S6,eatf5);
        
          
     /*FilosofoLeft fil1 = new FilosofoLeft  (fork2, fork1, 1, pensar1, eat1, conf1,S16,S17,S18);       
@@ -959,8 +964,13 @@ public class view extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
  
-       System.exit(0);
-      
+      //System.exit(0);
+
+    fil1.estado = false;
+    fil2.estado = false;
+    fil3.estado = false;
+    fil4.estado = false;
+    fil5.estado = false;
        
     }//GEN-LAST:event_jButton2ActionPerformed
 
